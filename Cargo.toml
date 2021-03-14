@@ -1,0 +1,19 @@
+[package]
+name = "templaters"
+version = "0.0.0"
+authors = ["Heiko Alexander Weber <haw@voidpointergroup.com>"]
+edition = "2018"
+license = "MIT"
+description = "templaters"
+readme = "docs/README.md"
+homepage = "https://replicadse.github.io/templaters"
+repository = "https://github.com/replicadse/templaters"
+keywords = ["todo"]
+categories = ["command-line-utilities"]
+
+[features]
+  default = []
+
+[dependencies]
+clap = "2.33.0"
+aquamarine = "0.1.5"

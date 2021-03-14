@@ -1,0 +1,19 @@
+# Maintainer: replicadse <haw@voidpointergroup.com>
+pkgname=templaters
+pkgver=0.0.0
+pkgrel=1
+epoch=
+pkgdesc='rust template'
+arch=('x86_64')
+url='https://github.com/replicadse/templaters'
+license=('MIT')
+makedepends=(
+  'rust'
+  'rustup'
+  'cargo'
+)
+provides=('templaters')
+
+package() {
+  cargo +nightly install $pkgname --version=$pkgver --root="$pkgdir/usr" --no-track --all-features
+}
